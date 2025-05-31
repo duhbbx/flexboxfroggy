@@ -50,6 +50,7 @@ body {
   flex-wrap: wrap;
   margin-top: -0.5rem;
   justify-content: space-between;
+  align-items: center;
 }
 
 .title {
@@ -429,7 +430,7 @@ button:not(.disabled):hover {
 
 #settings .tooltip {
   display: none;
-  bottom: 30px;
+  top: 40px;
   left: 0px;
   width: 275px;
   max-width: 275px;
@@ -438,9 +439,9 @@ button:not(.disabled):hover {
   z-index: 80;
 }
 
-#settings .tooltip:after {
+#settings .tooltip::before {
   top: auto;
-  bottom: -12px;
+  bottom: -15px;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   border-top: 12px solid #2c3e50;

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-cn">
   <head>
     <meta charset="utf-8">
     <title>Flexbox Froggy - A game for learning CSS flexbox</title>
@@ -14,7 +14,7 @@
     <meta name="twitter:title"        content="Flexbox Froggy">
     <meta name="twitter:description"  content="A game for learning CSS flexbox">
     <meta name="twitter:image"        content="https://flexboxfroggy.com/images/screenshot.png">
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="animate.css/animate.min.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans|Fredoka+One|Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -22,73 +22,14 @@
     <section id="sidebar">
       <div class="header">
         <div>
-          <h1 class="title">Flexbox Froggy</h1>
+          <h1 class="title">跳跳蛙🐸</h1>
         </div>
-        <div id="level-counter">
-          <span class="arrow left">
-            <span class="triangle"></span>
-          </span>
-          <span id="level-indicator">
-            <span id="labelLevel" class="translate">Level</span>
-            <span class="current">1</span>
-            <span id="labelOf" class="translate">of</span>
-            <span class="total">1</span>
-            <span class="caret">▾</span>
-          </span>
-          <span class="arrow right">
-            <span class="triangle"></span>
-          </span>
-          <div id="levelsWrapper" class="tooltip">
-            <div id="levels"></div>
-            <div id="labelReset" class="translate">Reset</div>
-          </div>
-        </div>
-      </div>
-      <p id="instructions"></p>
-      <div id="editor">
-        <div id="css">
-          <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
-          <pre id="before"></pre>
-          <textarea id="code" autofocus autocapitalize="none" spellcheck="false"></textarea>
-          <pre id="after"></pre>
-        </div>
-        <button id="next" class="translate">Next</button>
-      </div>
-      <div id="share">
-        <div class="games">
-          <a target="_blank" data-title="Grid Garden" href="https://codepip.com/games/grid-garden/">
-            <img src="images/games/grid-garden.png" alt="Grid Garden">
-          </a>
-          <a target="_blank" data-title="Anchoreum" href="https://codepip.com/games/anchoreum/">
-            <img src="images/games/anchoreum.png" alt="Anchoreum">
-          </a>
-          <a target="_blank" data-title="Disarray" href="https://codepip.com/games/disarray/">
-            <img src="images/games/disarray.png" alt="Disarray">
-          </a>
-          <a target="_blank" data-title="CSS Scoops" href="https://codepip.com/games/css-scoops/">
-            <img src="images/games/css-scoops.png" alt="CSS Scoops">
-          </a>
-        </div>
-        <p class="social">
-          <span id="tweet">
-            <a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="https://flexboxfroggy.com" data-via="playcodepip">Tweet</a>
-            <a href="https://twitter.com/playcodepip" class="twitter-follow-button" data-show-count="false">Follow @playcodepip</a>
-          </span>
-          <span class="fb-like" data-href="https://flexboxfroggy.com" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></span>
-        </p>
-      </div>
 
-      <div class="credits">
-        <span id="labelFooter" class="translate">Flexbox Froggy is created by</span>
-        <a href="https://codepip.com">Codepip</a> •
-        <a href="https://youtube.com/codepip">YouTube</a> •
-        <a href="https://twitter.com/playcodepip">Twitter</a> •
-        <a href="https://github.com/thomaspark/flexboxfroggy/">GitHub</a> •
         <span id="settings">
-          <span id="labelSettings" class="toggle translate">Settings</span>
+          <span id="labelSettings" class="toggle translate">设置</span>
           <span class="tooltip">
             <section>
-              <h4 id="labelLanguage" class="translate">Language</h4>
+              <h4 id="labelLanguage" class="translate">语言</h4>
               <select id="language">
                 <option value="en">English</option>
                 <option value="es">Español</option>
@@ -144,41 +85,91 @@
               </select>
             </section>
             <section>
-              <h4 id="labelDifficulty" class="translate">Difficulty</h4>
+              <h4 id="labelDifficulty" class="translate">难度</h4>
               <form id="difficulty">
                 <div>
                   <input type="radio" name="difficulty" id="difficultyEasy" value="easy" checked>
-                  <label id="labelDifficultyEasy" for="difficultyEasy" class="translate">Beginner</label>
+                  <label id="labelDifficultyEasy" for="difficultyEasy" class="translate">新手</label>
                 </div>
                 <div>
                   <input type="radio" name="difficulty" id="difficultyMedium" value="medium">
-                  <label id="labelDifficultyMedium" for="difficultyMedium" class="translate">Intermediate - No Directions</label>
+                  <label id="labelDifficultyMedium" for="difficultyMedium" class="translate">中级 - 没有指导</label>
                 </div>
                 <div>
                   <input type="radio" name="difficulty" id="difficultyHard" value="hard">
-                  <label id="labelDifficultyHard" for="difficultyHard" class="translate">Expert - No Directions &amp; Random Levels</label>
+                  <label id="labelDifficultyHard" for="difficultyHard" class="translate">专家 - 没有指导和随机关卡</label>
                 </div>
               </form>
             </section>
             <section>
-              <h4 id="labelColorblind" class="translate">Colorblind Mode</h4>
+              <h4 id="labelColorblind" class="translate">色盲模式</h4>
               <form id="colorblind">
                 <div>
                   <div>
                     <input type="radio" name="colorblind" id="colorblindOff" value="false" checked>
-                    <label id="labelColorblindOff" for="colorblindOff" class="translate">Off</label>
+                    <label id="labelColorblindOff" for="colorblindOff" class="translate">关</label>
                   </div>
                   <div>
                     <input type="radio" name="colorblind" id="colorblindOn" value="true">
-                    <label id="labelColorblindOn" for="colorblindOn" class="translate">On</label>
+                    <label id="labelColorblindOn" for="colorblindOn" class="translate">开</label>
                   </div>
               </form>
             </section>
           </span>
         </span>
+
+        <div id="level-counter">
+          <span class="arrow left">
+            <span class="triangle"></span>
+          </span>
+          <span id="level-indicator">
+            <span id="labelLevel" class="translate">Level</span>
+            <span class="current">1</span>
+            <span id="labelOf" class="translate">of</span>
+            <span class="total">1</span>
+            <span class="caret">▾</span>
+          </span>
+          <span class="arrow right">
+            <span class="triangle"></span>
+          </span>
+          <div id="levelsWrapper" class="tooltip">
+            <div id="levels"></div>
+            <div id="labelReset" class="translate">Reset</div>
+          </div>
+        </div>
       </div>
-      <div class="credits">
-        <span id="gridGarden" class="translate">Want to learn more CSS? Play</span> <a href="https://codepip.com/games/grid-garden/">Grid Garden</a> or <a href="https://codepip.com/games/anchoreum/">Anchoreum</a>.
+      <p id="instructions"></p>
+      <div id="editor">
+        <div id="css">
+          <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+          <pre id="before"></pre>
+          <textarea id="code" autofocus autocapitalize="none" spellcheck="false"></textarea>
+          <pre id="after"></pre>
+        </div>
+        <button id="next" class="translate">Next</button>
+      </div>
+      <div id="share">
+        <div class="games">
+          <a target="_blank" data-title="Grid Garden" href="https://codepip.com/games/grid-garden/">
+            <img src="images/games/grid-garden.png" alt="Grid Garden">
+          </a>
+          <a target="_blank" data-title="Anchoreum" href="https://codepip.com/games/anchoreum/">
+            <img src="images/games/anchoreum.png" alt="Anchoreum">
+          </a>
+          <a target="_blank" data-title="Disarray" href="https://codepip.com/games/disarray/">
+            <img src="images/games/disarray.png" alt="Disarray">
+          </a>
+          <a target="_blank" data-title="CSS Scoops" href="https://codepip.com/games/css-scoops/">
+            <img src="images/games/css-scoops.png" alt="CSS Scoops">
+          </a>
+        </div>
+        <p class="social">
+          <span id="tweet">
+            <a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="https://flexboxfroggy.com" data-via="playcodepip">Tweet</a>
+            <a href="https://twitter.com/playcodepip" class="twitter-follow-button" data-show-count="false">Follow @playcodepip</a>
+          </span>
+          <span class="fb-like" data-href="https://flexboxfroggy.com" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></span>
+        </p>
       </div>
     </section>
     <section id="view">
@@ -189,7 +180,7 @@
         </div>
       </div>
     </section>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="jquery/dist/jquery.min.js"></script>
     <script src="js/levels.js"></script>
     <script src="js/docs.js"></script>
     <script src="js/messages.js"></script>

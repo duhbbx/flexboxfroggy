@@ -462,6 +462,7 @@ var messages = {
   },
   labelLanguage: {
     'en': 'Language',
+    'zh-cn': '语言',
     'af': 'Taal',
     'gj': 'ભાષા',
     'he': 'שפה',
@@ -494,6 +495,7 @@ var messages = {
   },
   labelSettings: {
     'en': 'Settings',
+    'zh-cn': '设置',
     'af': 'Instellings',
     'he': 'הגדרות',
     'bs': 'Postavke',
@@ -524,6 +526,7 @@ var messages = {
   },
   labelDifficulty: {
     'en': 'Difficulty',
+    'zh-cn': '难度',
     'af': 'Moeilikheid',
     'gj': 'મુશ્કેલી',
     'he': 'רמת קושי',
@@ -555,6 +558,7 @@ var messages = {
   },
   labelColorblind: {
     'en': 'Colorblind Mode',
+    'zh-cn': '色盲模式',
     'af': 'Kleurblind mode',
     'he': 'מצב לעיוורי צבעים',
     'bs': 'Postavke za slijepe',
@@ -584,6 +588,7 @@ var messages = {
   },
   labelColorblindOff: {
     'en': 'Off',
+    'zh-cn': '关',
     'af': 'Af',
     'he': 'כבוי',
     'bs': 'Deaktivirano',
@@ -612,6 +617,7 @@ var messages = {
   },
   labelColorblindOn: {
     'en': 'On',
+    'zh-cn': '开',
     'af': 'Aan',
     'he': 'דלוק',
     'bs': 'Aktivirano',
@@ -640,6 +646,7 @@ var messages = {
   },
   labelDifficultyEasy: {
     'en': 'Beginner',
+    'zh-cn': '新手',
     'af': 'Beginner',
     'gj': 'સરળ',
     'he': 'קל',
@@ -671,6 +678,7 @@ var messages = {
   },
   labelDifficultyMedium: {
     'en': 'Intermediate - No Directions',
+    'zh-cn': '中级 - 没有指导',
     'af': 'Intermediêre - Geen aanwysings',
     'gj': 'મધ્યમ - કોઈ દિશા વિના',
     'he': 'בינוני - בלי בכוונה',
@@ -702,6 +710,7 @@ var messages = {
   },
   labelDifficultyHard: {
     'en': 'Expert - No Directions & Random Levels',
+    'zh-cn': '专家 - 没有指导和随机关卡',
     'af': 'Kenner - Geen direksies & willekeurige vlakke',
     'gj': 'મુશ્કેલ - કોઈ દિશા વિના અને રેન્ડમ',
     'he': 'קשה - בלי הכוונה ובשלבים רנדומלים',
